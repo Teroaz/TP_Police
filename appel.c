@@ -33,6 +33,13 @@ void charger_appels(Appel *appels) {
             } else if (i == 2) {
                 strcpy(appels[index_ligne].nom, p);
             } else if (i == 3) {
+
+//                if (p[0] == 'S') {
+//                    appels[index_ligne].type = SORTANT;
+//                } else {
+//                    appels[index_ligne].type = ENTRANT;
+//                }
+
                 appels[index_ligne].type = p[0] == 'S' ? SORTANT : ENTRANT;
             }
 
@@ -44,4 +51,3 @@ void charger_appels(Appel *appels) {
         index_ligne++;
     }
 }
-

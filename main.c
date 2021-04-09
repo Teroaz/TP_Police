@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "appel.h"
 #include "tris.h"
+#include "stats.h"
 
 int main() {
     Appel appels[1000];
@@ -8,15 +9,12 @@ int main() {
     charger_appels(appels);
 
     // Tri à bulles
-    triABulles(appels);
+    //triABulles(appels);
 
     // Tri par insertion
     triParInsertion(appels);
 
-
-    for (int i = 0; i < NBR_APPEL; i++) {
-        printf("%ld %s %s %u\n", appels[i].numero, appels[i].prenom, appels[i].nom, appels[i].type);
-    }
+    recuperer_informations(appels);
 
     return 0;
 }
