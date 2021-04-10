@@ -4,10 +4,10 @@
 #include "appel.h"
 
 typedef struct numero {
+
     unsigned long numero;
     int sortant;
     int entrant;
-
 } Numero;
 
 void *recuperer_informations(Appel *);
