@@ -1,6 +1,6 @@
 #include "stats.h"
 
-void *recuperer_informations(Appel *appels) {
+void recuperer_informations(Appel *appels) {
 
     Numero nums[1000];
 
@@ -79,6 +79,7 @@ void *recuperer_informations(Appel *appels) {
             break;
         }
     }
+
 }
 
 

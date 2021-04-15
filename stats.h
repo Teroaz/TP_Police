@@ -10,6 +10,6 @@ typedef struct numero {
     int entrant;
 } Numero;
 
-void *recuperer_informations(Appel *);
+void recuperer_informations(Appel *);
 
 #endif //TP_POLICE_STATS_H
